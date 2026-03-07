@@ -128,8 +128,9 @@ if result and result[1] != -1:
     # 每 10 秒執行一次 daily_crawler，但只有數據變化時才寫入資料庫
     scheduler.add_job(daily_crawler, 'interval', seconds=10)
 
-    # 設定在 1 分鐘後關閉程式
-    run_time = datetime.now() + timedelta(minutes=1)
+    # 設定在當天下午兩點執行 end_program
+    current_time = datetime.now()
+    run_time = datetime(current_time.year, current_time.month, current_time.day, 14, 0, 0) #下午兩點
     scheduler.add_job(end_program, 'date', run_date=run_time)
 
     try:
