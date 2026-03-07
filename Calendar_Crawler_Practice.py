@@ -18,9 +18,9 @@ target_year = 2026  # 你可以手動修改這個值來爬取不同年份
 # SQL Server 連線資訊
 db_settings = {
     "host": "127.0.0.1",
-    "user": "a159753de",
-    "password": "g5982734de",
-    "database": "ncu_database",
+    "user": "",
+    "password": "",
+    "database": "",
     "charset": "utf8"
 }
 

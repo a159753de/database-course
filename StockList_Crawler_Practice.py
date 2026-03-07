@@ -12,9 +12,9 @@ from selenium.webdriver.edge.service import Service
 
 db_settings = {
     "host": "127.0.0.1",
-    "user": "a159753de",
-    "password": "g5982734de",
-    "database": "ncu_database",
+    "user": "",
+    "password": "",
+    "database": "",
     "charset": "utf8"
 }
 
